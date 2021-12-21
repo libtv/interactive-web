@@ -2,11 +2,6 @@
 
 ## 뮤직 플레이어 제작
 
-### 결과 페이지
-
-> https://libtv.github.io/interactive-mp3-player/
-<br>
-
 ### 사용 기술
 
 1. Transform

@@ -2,11 +2,6 @@
 
 ## flex 기반 동영상 웹 페이지
 
-### 결과 페이지
-
-> https://libtv.github.io/interative-flex-video/
-<br>
-
 ### 사용 기술
 
 1. Transform

@@ -2,11 +2,6 @@
 
 ## 마을 애니메이션
 
-### 결과 페이지
-
-> https://libtv.github.io/interactive-city/ 
-<br>
-
 ### 사용 기술
 
 1. Transform

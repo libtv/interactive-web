@@ -2,11 +2,6 @@
 
 ## 기업형 웹 페이지 제작하기
 
-### 결과 페이지
-
-> https://libtv.github.io/interactive-innovation-web/
-<br>
-
 ### 사용 기술
 
 1. Transform

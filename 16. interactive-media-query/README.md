@@ -2,13 +2,6 @@
 
 ## 핀터레스트 스타일의 반응형 웹 갤러리 제작하기
 
-<br>
-
-### 관련 페이지
->  https://libtv.github.io/interactive-media-query/
-
-<br>
-
 ### 사용 기술
 1. isotope 플러그인 <br><br>
    **@import** : <br>

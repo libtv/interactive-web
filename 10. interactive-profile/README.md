@@ -2,11 +2,6 @@
 
 ## 온라인 프로필 카드 제작하기
 
-### 결과 페이지
-
-> https://libtv.github.io/interactive-profile/
-<br>
-
 ### 사용 기술
 
 1. Transform

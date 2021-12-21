@@ -2,11 +2,6 @@
 
 ## 파노라마 회사 소개 페이지 제작하기
 
-### 결과 페이지
-
-> https://libtv.github.io/interactive-3d-panorama/
-<br>
-
 ### 사용 기술
 
 1. Transform
