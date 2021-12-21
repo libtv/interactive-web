@@ -1,0 +1,86 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a:link,
+a:hover,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #283744;
+} */
+
+/* span:nth-child(3n + 1) {
+  background-color: aqua;
+} */
+:root {
+  --main-color: #ccc;
+}
+html {
+  background-color: tamato;
+}
+
+body {
+  background-color: aqua;
+  margin: 50px;
+  height: 1000vh;
+}
+
+#green {
+  background-color: teal;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+div > span {
+  background-color: tomato;
+  margin: 0 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+p span {
+  background-color: var(--main-color);
+}
+
+p + span {
+  text-decoration: underline;
+}
+
+input:required {
+  border: 1px solid tomato;
+}
+
+input:optional {
+  border-color: blue;
+}
+
+input[type="password"] {
+  background-color: pink;
+}
+input[placeholder~="name"] {
+  background-color: gold;
+}
+
+button:active {
+  background-color: yellowgreen;
+}
+
+form {
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form:hover input:focus {
+  border-color: seagreen;
+  background-color: brown;
+}

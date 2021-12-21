@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+    height: 4000px;
+    font-family: "Poiret One";
+    background-color: #ddd;
+}
+
+#logo {
+    width: fit-content;
+    height: 172px;
+
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+#sns {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 15px 30px;
+}
+
+#sns li {
+    color: #777;
+    cursor: pointer;
+}
+
+#nav {
+    position: fixed;
+    left: 30px;
+    top: 200px;
+
+    width: 500px;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav li {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+
+#nav li.on {
+    color: black;
+    font-size: 20px;
+}
+
+#txt {
+    position: fixed;
+    top: 35%;
+    right: 10px;
+    text-align: end;
+}
+
+#txt span {
+    font-size: 70px;
+    color: white;
+}
+
+#txt span strong {
+    color: #888;
+}
+
+#txt p {
+    margin-top: 15px;
+}
+
+section {
+    position: fixed;
+    top: 30%;
+    left: 0;
+
+    width: 4600px;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+article {
+    width: 200px;
+    height: 80%;
+
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 5px;
+
+    transition: all 0.8s;
+
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+article.on {
+    width: 600px;
+    height: 99%;
+    box-sizing: border-box;
+}
+
+article .small-img {
+    width: 200px;
+    height: 300px;
+}
+
+article .small-h2 {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px 15px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: white;
+    background-color: #777;
+    z-index: 5;
+    opacity: 0.8;
+}
+
+article .big-h2 {
+    opacity: 0;
+}
+
+article .big-img {
+    width: 0;
+    height: 0;
+}
+
+article.on .small-img {
+    opacity: 0;
+}
+
+article.on .small-h2 {
+    opacity: 0;
+}
+
+article.on .big-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+article.on .big-h2 {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 30%;
+    width: 100%;
+    padding: 5px 15px;
+
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: white;
+    background-color: #777;
+    z-index: 5;
+    opacity: 0.8;
+}

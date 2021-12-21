@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to kokoa Talk</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="stauts-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+        <!-- To Do: Wifi Icon-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- To DO: Battery Icon-->
+        <i class="fas fa-bolt"></i>
+        <!-- To DO: Ligitning Icon-->
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome To KaKaoTalk</h1>
+      <p class="welcome-header__text">
+        If you have a KaKao Acoount, log in with your email or Phnoe number
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <a href="#">Find KaKao Acoount or password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/59f2437fc3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

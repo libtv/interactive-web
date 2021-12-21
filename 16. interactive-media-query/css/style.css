@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("./min1630.css");
+@import url("./max1629.css");
+
+/* wrap */
+body {
+    font-family: "Orbitron";
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+}

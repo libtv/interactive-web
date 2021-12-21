@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+body {
+    font-family: "Orbitron";
+}
+
+/* wrap */
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background-color: #333;
+    display: flex;
+}
+
+/* header */
+
+#header {
+    width: 350px;
+    height: 100%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 80px 0px 80px 140px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+#header i {
+    font-size: 150px;
+}
+
+#header em {
+    display: block;
+    margin-top: 18px;
+    font-size: 21px;
+}
+
+/* contents */
+
+#contents {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    padding: 80px 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 150px;
+    font-size: 25px;
+    padding-right: 110px;
+    box-sizing: border-box;
+}
+
+.nav li {
+    margin-left: 40px;
+    color: #999;
+}
+
+/* real contents */
+
+#contents-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+
+.section {
+    width: 23%;
+    height: 100%;
+    margin-left: 50px;
+
+    padding-top: 200px;
+    padding-left: 110px;
+    box-sizing: border-box;
+    opacity: 0.3;
+    cursor: pointer;
+    position: relative;
+
+    overflow: hidden;
+    z-index: 2;
+    color: black;
+}
+
+.section h2 {
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 90px;
+    color: black;
+}
+
+.section h2::after {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 0;
+    top: 50px;
+
+    background-color: #999;
+}
+
+.section video {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    z-index: 5;
+}
+
+/* 10% 33%  54% 75% */
+
+.section-wrap {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    left: -10%;
+    top: 0;
+
+    background-color: #888;
+    z-index: 1;
+    opacity: 0;
+}
+
+.full-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5000px;
+    top: 0;
+
+    background-color: #222;
+    opacity: 1;
+    transition: 1s;
+}
+
+.full-wrap.on {
+    opacity: 1;
+    z-index: 10;
+    left: 0px;
+}
+
+.full-wrap h2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: yellow;
+    cursor: pointer;
+}
+
+.full-wrap video {
+    position: absolute;
+    width: 80%;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}

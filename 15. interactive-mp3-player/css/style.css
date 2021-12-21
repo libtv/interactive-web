@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+/* wrap */
+
+body {
+    font-family: "Orbitron";
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(to left bottom, violet, pink);
+}
+
+/* headers */
+
+#header {
+    width: 100%;
+    height: 150px;
+
+    padding: 50px 80px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    font-size: 30px;
+}
+
+.header-logo h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header-logo h2:hover {
+    transform: scale(1.2);
+}
+
+.header-logo h6 {
+    font-size: 18px;
+}
+
+.header-menu li {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header-menu li:hover {
+    transform: scale(1.2);
+}
+
+/* contents */
+
+@keyframes ani {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#contents {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 1200px;
+}
+
+.content {
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(45deg, white, white);
+    position: absolute;
+
+    transition: all 2s;
+    left: 40%;
+    opacity: 0.2;
+
+    border-radius: 15px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content.on {
+    opacity: 1;
+}
+
+.content.on .content-img {
+    transition: all 0.5s;
+    animation: ani 5s linear 0s infinite forwards;
+}
+
+.content-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    margin-left: 50px;
+    margin-top: 50px;
+
+    transform-origin: center;
+    transition: all 0.5s;
+}
+
+.content-h2 {
+    font-size: 20px;
+    width: 100%;
+
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.content-p {
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12.5px;
+}
+
+.content-play {
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    font-size: 20px;
+}
+
+.content-play li {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.content-play li:hover {
+    transform: scale(1.2);
+}

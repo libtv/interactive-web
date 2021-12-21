@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron");
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    font-family: "Orbitron";
+}
+
+#nav {
+    position: absolute;
+    top: 20px;
+    right: 15%;
+    display: flex;
+    width: 500px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav li {
+    margin-left: 50px;
+    cursor: pointer;
+    color: black;
+    opacity: 0.8;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+#header > h2 {
+    width: 40%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+#header > h2:hover {
+    color: blue;
+}
+
+#header ul {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+#header ul li {
+    cursor: pointer;
+    padding: 20px 40px;
+    transition: all 0.5s;
+}
+
+#header ul li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+#contents {
+    position: relative;
+    content: " ";
+    width: 100%;
+    height: 100%;
+}
+
+#contents video {
+    width: 100%;
+    height: 1000px;
+    object-fit: fill;
+}
+
+#contents::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#contents .content {
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: 30%;
+}
+
+#contents .content h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#contents .content button {
+    width: 400px;
+    height: fit-content;
+    padding: 15px 150px 15px 150px;
+    box-sizing: border-box;
+    background: none;
+    color: white;
+    margin-top: 50px;
+    border: 2px solid white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Orbitron";
+}
+
+#news {
+    width: 100%;
+    height: 700px;
+
+    position: relative;
+    padding: 200px 350px;
+    box-sizing: border-box;
+}
+
+#news h2 {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#news ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#news ul li {
+    width: 25%;
+}
+
+#news ul li img {
+    width: 95%;
+    height: 160px;
+}
+
+#news ul li h3 {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+#news ul li h6 {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#footer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #333;
+    content: " ";
+    padding: 100px 350px;
+    box-sizing: border-box;
+    color: #555;
+}
+
+#footer .f1 {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#footer .f1::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -20px;
+    background-color: #555;
+}
+
+#footer .f1 h4 {
+    font-size: 25px;
+}
+
+#footer .f1 ul {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer p {
+    margin-top: 15px;
+}
+
+#footer p:nth-child(2) {
+    margin-top: 55px;
+}

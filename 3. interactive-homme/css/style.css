@@ -1,0 +1,410 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: "Orbitron";
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    min-width: 1024px;
+    min-height: 768px;
+    perspective: 900px;
+    background-color: black;
+}
+
+@keyframes ani {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.btnMenu {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+
+    font-size: 40px;
+    color: white;
+
+    z-index: 3;
+    animation: ani 1s ease 0s infinite alternate;
+}
+
+.nav {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    z-index: 2;
+
+    padding: 20px 15px;
+    box-sizing: border-box;
+
+    transform-origin: left center;
+    transform: rotateY(120deg);
+    transition: all 0.5s ease 0s;
+}
+
+.nav img {
+    width: 100%;
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.nav.on {
+    transform: rotateY(10deg);
+}
+
+.nav .nav-txt {
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section {
+    width: calc(100% - 200px);
+    height: 100%;
+    margin-left: 200px;
+    background-color: #555;
+    z-index: 5;
+
+    transform-origin: right center;
+    transform: rotateY(-2deg);
+    transition: all 0.5s ease 0s;
+}
+
+.section > div {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    perspective: 700px;
+    transition: all 0.5s linear 0s;
+}
+
+.section.on {
+    transform: rotateY(-120deg);
+}
+
+.section > div.on {
+    opacity: 1;
+    z-index: 2;
+}
+
+.section > div > p {
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: rotateY(180deg);
+    transition: all 0.5s linear 0s;
+}
+
+.section > div.on > p {
+    transform: rotateY(0deg);
+}
+
+/* box1 */
+.box1 > p {
+    height: 25%;
+    float: left;
+}
+
+.box1 > p:nth-child(1) {
+    width: 50%;
+    background-color: #ddd;
+}
+.box1 > p:nth-child(2) {
+    width: 25%;
+    background-color: #ccc;
+}
+.box1 > p:nth-child(3) {
+    width: 25%;
+    background-color: #bbb;
+}
+.box1 > p:nth-child(4) {
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    float: right;
+}
+.box1 > p:nth-child(5) {
+    width: 25%;
+    background-color: #999;
+    float: right;
+}
+.box1 > p:nth-child(6) {
+    width: 25%;
+    background-color: #888;
+    float: right;
+}
+.box1 > p:nth-child(7) {
+    width: 25%;
+    background-color: #777;
+    float: right;
+}
+.box1 > p:nth-child(8) {
+    width: 25%;
+    background-color: #666;
+    float: right;
+}
+.box1 > p:nth-child(9) {
+    width: 25%;
+    background-color: #555;
+}
+.box1 > p:nth-child(10) {
+    width: 50%;
+    background-color: #444;
+}
+.box1 > p:nth-child(11) {
+    width: 25%;
+    background-color: #333;
+}
+
+/* box1 */
+.box1 > p {
+    height: 25%;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+}
+
+.box1 > p:nth-child(1) {
+    width: 50%;
+    background-color: #ddd;
+}
+.box1 > p:nth-child(2) {
+    width: 25%;
+    background-image: url("../img/k1.jpg");
+}
+.box1 > p:nth-child(3) {
+    width: 25%;
+    background-color: #bbb;
+}
+.box1 > p:nth-child(4) {
+    width: 50%;
+    height: 50%;
+    background-image: url("../img/m1.jpg");
+    float: right;
+}
+.box1 > p:nth-child(5) {
+    width: 25%;
+    background-image: url("../img/k2.jpg");
+    float: right;
+}
+.box1 > p:nth-child(6) {
+    width: 25%;
+    background-color: #888;
+    float: right;
+}
+.box1 > p:nth-child(7) {
+    width: 25%;
+    background-color: #777;
+    float: right;
+}
+.box1 > p:nth-child(8) {
+    width: 25%;
+    background-image: url("../img/k3.jpg");
+    float: right;
+}
+.box1 > p:nth-child(9) {
+    width: 25%;
+    background-color: #555;
+}
+.box1 > p:nth-child(10) {
+    width: 50%;
+    background-image: url("../img/k4.jpg");
+}
+.box1 > p:nth-child(11) {
+    width: 25%;
+    background-color: #333;
+}
+
+/* box2 */
+.box2 > p {
+    height: 25%;
+    float: left;
+}
+
+.box2 > p:nth-child(1) {
+    width: 50%;
+    background-color: #ddd;
+}
+.box2 > p:nth-child(2) {
+    width: 25%;
+    background-color: #ccc;
+}
+.box2 > p:nth-child(3) {
+    width: 25%;
+    background-color: #bbb;
+}
+.box2 > p:nth-child(4) {
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    float: right;
+}
+.box2 > p:nth-child(5) {
+    width: 25%;
+    background-color: #999;
+    float: right;
+}
+.box2 > p:nth-child(6) {
+    width: 25%;
+    background-color: #888;
+    float: right;
+}
+.box2 > p:nth-child(7) {
+    width: 25%;
+    background-color: #777;
+    float: right;
+}
+.box2 > p:nth-child(8) {
+    width: 25%;
+    background-color: #666;
+    float: right;
+}
+.box2 > p:nth-child(9) {
+    width: 25%;
+    background-color: #555;
+}
+.box2 > p:nth-child(10) {
+    width: 50%;
+    background-color: #444;
+}
+.box2 > p:nth-child(11) {
+    width: 25%;
+    background-color: #333;
+}
+
+/* box3 */
+.box3 > p {
+    height: 25%;
+    float: left;
+}
+
+.box3 > p:nth-child(1) {
+    width: 50%;
+    background-color: #ddd;
+}
+.box3 > p:nth-child(2) {
+    width: 25%;
+    background-color: #ccc;
+}
+.box3 > p:nth-child(3) {
+    width: 25%;
+    background-color: #bbb;
+}
+.box3 > p:nth-child(4) {
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    float: right;
+}
+.box3 > p:nth-child(5) {
+    width: 25%;
+    background-color: #999;
+    float: right;
+}
+.box3 > p:nth-child(6) {
+    width: 25%;
+    background-color: #888;
+    float: right;
+}
+.box3 > p:nth-child(7) {
+    width: 25%;
+    background-color: #777;
+    float: right;
+}
+.box3 > p:nth-child(8) {
+    width: 25%;
+    background-color: #666;
+    float: right;
+}
+.box3 > p:nth-child(9) {
+    width: 25%;
+    background-color: #555;
+}
+.box3 > p:nth-child(10) {
+    width: 50%;
+    background-color: #444;
+}
+.box3 > p:nth-child(11) {
+    width: 25%;
+    background-color: #333;
+}
+
+.section > div > p {
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    transform: rotateY(180deg);
+    transition: all 1.5s;
+
+    display: flex;
+}
+
+.section > div > p > span {
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 20px;
+    color: #eee;
+}
+
+.section > div > p > strong {
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    font-size: 50px;
+}
+
+.section > div > p > video {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section > div > p > em {
+    width: 33.3333%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.section > div > p > em i {
+    color: white;
+}
